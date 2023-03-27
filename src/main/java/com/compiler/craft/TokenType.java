@@ -1,7 +1,9 @@
+package com.compiler.craft;
+
 /**
  * Token的类型
  */
-public enum TokenType{
+public enum TokenType {
     Plus,   // +
     Minus,  // -
     Star,   // *
@@ -21,7 +23,7 @@ public enum TokenType{
 
     If,
     Else,
-    
+
     Int,
 
     Identifier,     //标识符

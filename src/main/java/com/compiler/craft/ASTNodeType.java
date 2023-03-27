@@ -1,3 +1,5 @@
+package com.compiler.craft;
+
 /**
  * AST节点的类型。
  */

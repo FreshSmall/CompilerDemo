@@ -1,3 +1,5 @@
+package com.compiler.craft;
+
 /**
  * 一个简单的Token。
  * 只有类型和文本值两个属性。

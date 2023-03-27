@@ -1,4 +1,4 @@
-
+package com.compiler.craft;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -9,7 +9,7 @@ import java.util.HashMap;
  * 所支持的语法，请参见SimpleParser.java
  *
  * 运行脚本：
- * 在命令行下，键入：java SimpleScript
+ * 在命令行下，键入：java com.compiler.craft.SimpleScript
  * 则进入一个REPL界面。你可以依次敲入命令。比如：
  * > 2+3;
  * > int age = 10;

@@ -12,10 +12,8 @@
     <dependencies>
         <dependency>
             <groupId>org.antlr</groupId>
-            <artifactId>antlr4</artifactId>
-            <version>4.7.2-complete</version>
-            <scope>system</scope>
-            <systemPath>/Users/bjhl/Work/MavenSetting/system-repository/antlr-4.7.2-complete.jar</systemPath>
+            <artifactId>antlr4-runtime</artifactId>
+            <version>4.9.2</version>
         </dependency>
     </dependencies>
 
