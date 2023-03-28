@@ -21,13 +21,17 @@ public class Java8Demo {
         Java8Lexer java8Lexer = new Java8Lexer(CharStreams.fromString(javaClassContent));
         CommonTokenStream tokens = new CommonTokenStream(java8Lexer);
         Java8Parser parser = new Java8Parser(tokens);
-        ParseTree tree = parser.compilationUnit();
-        System.out.println(tree.toStringTree(parser));
+        ParseTree tree = parser.methodDeclarator();
 
-        ParseTreeWalker walker = new ParseTreeWalker();
+        /*ParseTree tree = parser.compilationUnit();
+        System.out.println(tree.toStringTree(parser));*/
+
+        /*ParseTreeWalker walker = new ParseTreeWalker();
         UppercaseMethodListener listener = new UppercaseMethodListener();
 
         walker.walk(listener, tree);
-        System.out.println(listener.getErrors());
+        System.out.println(listener.getErrors());*/
+        UppercaseMethodVistor visitor = new UppercaseMethodVistor();
+        visitor.visit(tree);
     }
 }
