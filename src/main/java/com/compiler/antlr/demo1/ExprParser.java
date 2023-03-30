@@ -1,4 +1,4 @@
-// Generated from Expr.g4 by ANTLR 4.12.0
+// Generated from Expr.g4 by ANTLR 4.9.2
 package com.compiler.antlr.demo1;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class ExprParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.12.0", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -89,7 +89,6 @@ public class ExprParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ProgContext extends ParserRuleContext {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
@@ -137,7 +136,6 @@ public class ExprParser extends Parser {
 		return _localctx;
 	}
 
-	@SuppressWarnings("CheckReturnValue")
 	public static class ExprContext extends ParserRuleContext {
 		public TerminalNode INT() { return getToken(ExprParser.INT, 0); }
 		public List<ExprContext> expr() {
@@ -293,26 +291,15 @@ public class ExprParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\b\u001b\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
-		"\u0000\u0001\u0000\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0001"+
-		"\u0001\u0001\u0001\u0001\u0001\u0003\u0001\u000e\b\u0001\u0001\u0001\u0001"+
-		"\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0005\u0001\u0016"+
-		"\b\u0001\n\u0001\f\u0001\u0019\t\u0001\u0001\u0001\u0000\u0001\u0002\u0002"+
-		"\u0000\u0002\u0000\u0002\u0001\u0000\u0001\u0002\u0001\u0000\u0003\u0004"+
-		"\u001b\u0000\u0004\u0001\u0000\u0000\u0000\u0002\r\u0001\u0000\u0000\u0000"+
-		"\u0004\u0005\u0003\u0002\u0001\u0000\u0005\u0006\u0005\u0000\u0000\u0001"+
-		"\u0006\u0001\u0001\u0000\u0000\u0000\u0007\b\u0006\u0001\uffff\uffff\u0000"+
-		"\b\u000e\u0005\b\u0000\u0000\t\n\u0005\u0005\u0000\u0000\n\u000b\u0003"+
-		"\u0002\u0001\u0000\u000b\f\u0005\u0006\u0000\u0000\f\u000e\u0001\u0000"+
-		"\u0000\u0000\r\u0007\u0001\u0000\u0000\u0000\r\t\u0001\u0000\u0000\u0000"+
-		"\u000e\u0017\u0001\u0000\u0000\u0000\u000f\u0010\n\u0004\u0000\u0000\u0010"+
-		"\u0011\u0007\u0000\u0000\u0000\u0011\u0016\u0003\u0002\u0001\u0005\u0012"+
-		"\u0013\n\u0003\u0000\u0000\u0013\u0014\u0007\u0001\u0000\u0000\u0014\u0016"+
-		"\u0003\u0002\u0001\u0004\u0015\u000f\u0001\u0000\u0000\u0000\u0015\u0012"+
-		"\u0001\u0000\u0000\u0000\u0016\u0019\u0001\u0000\u0000\u0000\u0017\u0015"+
-		"\u0001\u0000\u0000\u0000\u0017\u0018\u0001\u0000\u0000\u0000\u0018\u0003"+
-		"\u0001\u0000\u0000\u0000\u0019\u0017\u0001\u0000\u0000\u0000\u0003\r\u0015"+
-		"\u0017";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\n\35\4\2\t\2\4\3"+
+		"\t\3\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3\3\3\3\5\3\20\n\3\3\3\3\3\3\3\3\3\3"+
+		"\3\3\3\7\3\30\n\3\f\3\16\3\33\13\3\3\3\2\3\4\4\2\4\2\4\3\2\3\4\3\2\5\6"+
+		"\2\35\2\6\3\2\2\2\4\17\3\2\2\2\6\7\5\4\3\2\7\b\7\2\2\3\b\3\3\2\2\2\t\n"+
+		"\b\3\1\2\n\20\7\n\2\2\13\f\7\7\2\2\f\r\5\4\3\2\r\16\7\b\2\2\16\20\3\2"+
+		"\2\2\17\t\3\2\2\2\17\13\3\2\2\2\20\31\3\2\2\2\21\22\f\6\2\2\22\23\t\2"+
+		"\2\2\23\30\5\4\3\7\24\25\f\5\2\2\25\26\t\3\2\2\26\30\5\4\3\6\27\21\3\2"+
+		"\2\2\27\24\3\2\2\2\30\33\3\2\2\2\31\27\3\2\2\2\31\32\3\2\2\2\32\5\3\2"+
+		"\2\2\33\31\3\2\2\2\5\17\27\31";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
