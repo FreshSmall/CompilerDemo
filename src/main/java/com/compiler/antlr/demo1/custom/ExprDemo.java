@@ -8,6 +8,16 @@ import org.antlr.v4.runtime.tree.ParseTree;
 
 public class ExprDemo {
 
+    public static String exprMethod(ParseTree tree) {
+        ExprVisitor visitor = new ExprVisitor();
+        return visitor.visit(tree);
+    }
+
+    public static int calculMethod(ParseTree tree) {
+        CalculVisitor visitor = new CalculVisitor();
+        return visitor.visit(tree);
+    }
+
     public static void main(String[] args) {
         String str = "10 + 20 * 30";
         ExprLexer lexer = new ExprLexer(CharStreams.fromString(str));
@@ -15,7 +25,7 @@ public class ExprDemo {
 
         ExprParser parser = new ExprParser(tokens);
         ParseTree tree = parser.expr();
-        ExprVisitor visitor = new ExprVisitor();
-        visitor.visit(tree);
+        System.out.println(exprMethod(tree));
+        System.out.println(calculMethod(tree));
     }
 }

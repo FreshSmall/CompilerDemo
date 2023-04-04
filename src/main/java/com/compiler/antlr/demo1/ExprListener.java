@@ -18,13 +18,51 @@ public interface ExprListener extends ParseTreeListener {
 	 */
 	void exitProg(ExprParser.ProgContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link ExprParser#expr}.
+	 * Enter a parse tree produced by the {@code exprint}
+	 * labeled alternative in {@link ExprParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void enterExpr(ExprParser.ExprContext ctx);
+	void enterExprint(ExprParser.ExprintContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link ExprParser#expr}.
+	 * Exit a parse tree produced by the {@code exprint}
+	 * labeled alternative in {@link ExprParser#expr}.
 	 * @param ctx the parse tree
 	 */
-	void exitExpr(ExprParser.ExprContext ctx);
+	void exitExprint(ExprParser.ExprintContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code exprmulti}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterExprmulti(ExprParser.ExprmultiContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code exprmulti}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitExprmulti(ExprParser.ExprmultiContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code exprplus}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterExprplus(ExprParser.ExprplusContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code exprplus}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitExprplus(ExprParser.ExprplusContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code exprbracket}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterExprbracket(ExprParser.ExprbracketContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code exprbracket}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitExprbracket(ExprParser.ExprbracketContext ctx);
 }

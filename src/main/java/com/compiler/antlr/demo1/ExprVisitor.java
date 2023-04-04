@@ -17,9 +17,31 @@ public interface ExprVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitProg(ExprParser.ProgContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ExprParser#expr}.
+	 * Visit a parse tree produced by the {@code exprint}
+	 * labeled alternative in {@link ExprParser#expr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExpr(ExprParser.ExprContext ctx);
+	T visitExprint(ExprParser.ExprintContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprmulti}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprmulti(ExprParser.ExprmultiContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprplus}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprplus(ExprParser.ExprplusContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code exprbracket}
+	 * labeled alternative in {@link ExprParser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprbracket(ExprParser.ExprbracketContext ctx);
 }
